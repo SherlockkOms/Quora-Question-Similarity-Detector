@@ -391,6 +391,11 @@ def main():
                 st.markdown('The questions are similar')
             else:
                 st.markdown('The questions are not similar')
+            ## Print the probability of similarity
+            st.write('Probability of similarity:', probas[0][1])
+
+            ## Print the probability of dissimilarity
+            st.write('Probability of dissimilarity:', probas[0][0])
 
     
 
