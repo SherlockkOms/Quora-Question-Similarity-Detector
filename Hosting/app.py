@@ -18,7 +18,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # Load the pre-trained models from two directories up, then into the 'Saved Models' directory
-tfidf_vectorizer = load('./Prerequisites/tfidf_vectorizer.joblib')
+tfidf_vectorizer = load('Hosting/Prerequisites/tfidf_vectorizer.joblib')
 svd_model = load('./Prerequisites/svd_model.joblib')
 gb_model = load('./Prerequisites/gbmodel.joblib')
 
