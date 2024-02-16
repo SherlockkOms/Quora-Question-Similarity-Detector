@@ -19,8 +19,8 @@ nltk.download('stopwords')
 
 # Load the pre-trained models from two directories up, then into the 'Saved Models' directory
 tfidf_vectorizer = load('Hosting/Prerequisites/tfidf_vectorizer.joblib')
-svd_model = load('./Prerequisites/svd_model.joblib')
-gb_model = load('./Prerequisites/gbmodel.joblib')
+svd_model = load('Hosting/Prerequisites/svd_model.joblib')
+gb_model = load('Hosting/Prerequisites/gbmodel.joblib')
 
 
 # Set of English stopwords
@@ -39,7 +39,7 @@ def main():
         st.title('Data Visualization and EDA')
         st.markdown('---')
         # Load data from two directories up, then into the 'Dataset' directory
-        og_data = pd.read_csv('./Prerequisites/questions.csv')
+        og_data = pd.read_csv('Hosting/Prerequisites/questions.csv')
 
         # Display the first 5 rows of the data
         st.markdown("## First 5 rows of the data")
