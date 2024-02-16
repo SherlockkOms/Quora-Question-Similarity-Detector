@@ -1,5 +1,0 @@
-## Tasks at disposal
-* Model Finalize and save the pickle/joblib; end to end pipeline : Om- Today lastby EOD tomorrow 
-* Hosting and recording : Krishan : Tuesday EOD 
-* Deck : Problem Statememt with Dataset, EDA, PRerpocessing : Lemma and vectorizer, Modeeling , Result , conclusion : Appendix : everything : Nandani Avi EOD Thursday 
-* Report : Yash  EOD Thursday , overleaf link to be shared by  Nandani

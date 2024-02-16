@@ -17,10 +17,11 @@ nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
 
-# Load the pre-trained models
-tfidf_vectorizer = load('tfidf_vectorizer.joblib')
-svd_model = load('svd_model.joblib')
-gb_model = load('gbmodel.joblib')
+# Load the pre-trained models from two directories up, then into the 'Saved Models' directory
+tfidf_vectorizer = load('../../Saved Models/tfidf_vectorizer.joblib')
+svd_model = load('../../Saved Models/svd_model.joblib')
+gb_model = load('../../Saved Models/gbmodel.joblib')
+
 
 # Set of English stopwords
 stop_words = set(stopwords.words('english'))
@@ -37,8 +38,9 @@ def main():
     with tab1:
         st.title('Data Visualization and EDA')
         st.markdown('---')
-        # Load data
-        og_data = pd.read_csv('questions.csv')
+        # Load data from two directories up, then into the 'Dataset' directory
+        og_data = pd.read_csv('../../Dataset/questions.csv')
+
         # Display the first 5 rows of the data
         st.markdown("## First 5 rows of the data")
         st.markdown("This table shows the first 5 rows of the data")
